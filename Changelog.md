@@ -1,0 +1,132 @@
+# Limpu Changelog
+
+> **Note**: The auto-generated Source code (zip / tar.gz) links in Assets are snapshots of this release repo itself (Changelog / docs), **not Limpu product source** — the product is not yet open source; please use the platform artifacts below for installation.
+> **说明**：Assets 中的 Source code (zip / tar.gz) 为本发布仓自身的自动快照，**非 Limpu 产品源码**——产品暂未开源，安装请以下方平台产物为准。
+
+## v0.1.0
+
+The first public release of Limpu: a desktop-native agent platform — generative UI, multi-agent collaboration, a unified model gateway and sandboxed execution, with your data staying local.
+
+---
+
+Limpu 首个公开发布：一个运行在桌面上的通用智能体平台——生成式界面、多智能体协作、统一模型网关与沙箱安全执行，数据全程留在本地。
+
+### Immersive Interaction (Generative UI)
+
+- Scenario UI driven by the AiX protocol: layout and content generated on the fly by agents, streaming straight to GPU rendering
+- Scenarios evolve along a timeline: jump back, branch, replay, reshape at will
+- Text selection, copy and full-block read-aloud inside scenario content
+- Generative canvas (deck) with built-in diagnostics and quality chain
+
+### Intelligent Units (IU) & Multi-Agent Collaboration
+
+- Intelligent Units (IU): AI applications as cards, tab-managed, with live generation feedback in a dynamic-island strip
+- Hierarchical sub-agent delegation: capability inheritance, live-growing task trees, cascading termination
+- Workflow engine, scheduled jobs, event triggers; background tasks and lane-isolated parallel execution
+- Built-in Skills system: multi-tier skill sources, check-to-inject into sessions
+- Specs / Todos / sub-agent & background task panels for at-a-glance run state
+
+### Model Gateway
+
+- Unified model routing: OpenAI-compatible / Anthropic / Gemini / Responses API protocols, 121+ providers
+- Layered model catalog, aliasing, session-level reasoning-effort control
+- Mainstream agent CLIs: auto-discovers local Claude Code, Codex, Gemini CLI, opencode and more — reuse their accounts and logins; sub-agents run on the tools you already know
+- MCP both ways: connect to external MCP servers as a client; expose built-in tools as an MCP server to external CLIs
+
+### Sessions & Memory
+
+- Session management: archive, favorites, hybrid search, launcher
+- Two-tier memory (structured + semantic), Obsidian wikilink compatible
+- Workspace / project as first-class entities: project mounts, full context & tool-trail replay
+- In-session image sending with Lightbox preview
+
+### Tools & Security
+
+- Built-in toolset: file I/O, web search, terminal and more
+- WASM sandbox: tool calls run isolated by default
+- Approval chain: global deny-list → allow-list → permission tiers → human approval, fully auditable
+- Four-tier working-directory mounts with controllable guest/host visibility
+
+### Voice
+
+- TTS / ASR via external providers: OpenAI voices, Qwen, Volcengine and more
+- Streaming TTS playback; selection read-aloud floating bar
+
+### UI & Experience
+
+- Native frameless window: custom title bar + system tray (Windows / macOS)
+- Bilingual UI: three interface-language modes (system / 中文 / English), reply-language awareness
+- Keyboard shortcuts: two-layer binding + visual key editor
+- Plugin center: WASM plugins and grammar packs, npm ecosystem direct
+
+### Data & Privacy
+
+- Local-first: encrypted credential storage, on-device sessions, zero mandatory telemetry
+- Movable user-data root: forwarding pointer keeps old locations seamless
+- Performance discipline: steady frame rate during generation, zero-cost idle sleep
+
+### Delivery & Auto-Update
+
+- Installers: Windows x64 (NSIS installer / zip), macOS Apple Silicon & Intel (DMG / zip)
+- Auto-update: Ed25519-signed update manifest hosted at www.limpu.ai, three-tier check cadence
+
+---
+
+### 沉浸式交互（生成式界面）
+
+- AiX 协议驱动的场景界面：布局与内容由智能体即时生成、流式涌现，直通 GPU 渲染
+- 场景沿时间线演进：可回溯跳转、可分支回放、可随时重塑
+- 场景内容文本圈选、复制与整段朗读
+- 生成式画布（deck）：诊断与质量链内建
+
+### 智能单元（IU）与多智能体协作
+
+- 智能单元（IU）：以卡片承载 AI 应用，Tab 化管理，灵动岛实时反馈生成状态
+- 子智能体层级委派：权限逐级继承、任务树实时生长、级联终止
+- 工作流引擎、定时任务、事件触发器，后台任务与隔离车道并行执行
+- 内置技能（Skills）体系：多级技能来源，勾选即注入会话
+- Specs / Todos / 子智能体与后台任务面板，运行状态一目了然
+
+### 模型网关
+
+- 统一模型路由：OpenAI 兼容 / Anthropic / Gemini / Responses API 多协议接入，121+ 供应商
+- 模型目录分层管理、别名映射、思考级别（reasoning effort）会话级调控
+- 主流 Agent CLI 直连：自动发现本机 Claude Code、Codex、Gemini CLI、opencode 等，复用既有账号与登录，子智能体直接跑在你熟悉的工具上
+- MCP 双向集成：作为客户端连接外部 MCP 服务器；也可将内置工具以 MCP server 形式提供给外部 CLI
+
+### 会话与记忆
+
+- 会话管理：归档、收藏、混合搜索与启动器直达
+- 双层记忆体系（结构化 + 语义），兼容 Obsidian 双向链接
+- 工作区 / 项目一等实体：项目挂载、上下文与工具轨迹完整重放
+- 会话图片发送与 Lightbox 大图预览
+
+### 工具与安全
+
+- 内置工具集：文件读写、Web 搜索、终端等
+- WASM 沙箱执行：工具调用默认隔离运行
+- 审批链：全局黑名单 → 白名单 → 权限等级 → 人工审批，全程可审计
+- 工作目录四档作用域挂载，guest / host 可见性可控
+
+### 语音
+
+- 语音合成（TTS）与识别（ASR）外置供应商路由：OpenAI 音色、千问、火山引擎等
+- 流式 TTS 播放、划词朗读浮条
+
+### 界面与体验
+
+- 原生无边框窗口：自绘标题栏 + 系统托盘（Windows / macOS）
+- 中英双语：界面语言三档（跟随系统 / 中文 / English），智能体回复语言感知
+- 快捷键体系：双层键位绑定 + 可视化键位编辑
+- 插件中心：WASM 插件与语法包插件化，npm 生态直连
+
+### 数据与隐私
+
+- 本地优先：凭证加密存储、会话本地保存、零强制遥测
+- 用户数据根可自定义迁移：转发指针保证旧位置无缝衔接
+- 性能治理：生成期帧率稳定、静置自动入睡零占用
+
+### 交付与自动更新
+
+- 安装包：Windows x64（NSIS 安装器 / zip）、macOS Apple Silicon + Intel（DMG / zip）
+- 自动更新：Ed25519 签名更新清单（www.limpu.ai 托管），检查节奏三档可控
